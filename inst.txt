@@ -1,0 +1,24 @@
+1. run application => npm start
+
+2. Move to package.json then 
+inside that file add "type": "module", to tell to import and export in es6
+
+mongodb atlas 
+username = admin
+password = taEAV3dhzEmI578p
+
+
+
+// console.log(username)
+// console.log(password)
+
+// app.use('/api', (req , res , next) => {
+//     res.send("Hello World")
+// })
+
+app.use(express.json()) // It indicates what type of data receieved from the frontend to server
+
+
+//12/6/2023 - 24:52
+
+//link - https://www.youtube.com/watch?v=_ee38nL13mE&t=2061s
