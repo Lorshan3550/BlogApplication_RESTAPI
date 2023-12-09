@@ -1,6 +1,7 @@
 import express from "express";
 import mongoose from "mongoose";
 import router from "./routes/user-routes"
+import blogRouter from './routes/blog-routes'
 import dotenv from "dotenv";
 dotenv.config();
 
@@ -13,6 +14,7 @@ const dbName = "Blog";
 app.use(express.json()) // It indicates what type of data receieved from the frontend to server
 
 app.use("/api/user", router) // http://localhost:5000/api/user/logon
+app.use("/api/blog", blogRouter)
 
 
 
